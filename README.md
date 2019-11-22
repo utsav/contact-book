@@ -28,7 +28,7 @@ The build is minified and the filenames include the hashes.<br />
 - create custom hook to get data with fetch
 - structure
   - custom hooks should be inside /hooks
-  - common components should be inside /src/componetns
+  - common components should be inside /src/components
   - page related components should be inside /src/pages/\*/components
 
 ### Deployment
