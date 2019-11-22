@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.root {
+  overflow: hidden;
+  display: flex;
+
+  button {
+    flex: 1;
+    position: relative;
+    background-color: $seashell;
+    float: left;
+    border: 1px solid $silver;
+    border-right: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    .count {
+      position: absolute;
+      font-size: 10px;
+      bottom: 5px;
+      right: 5px;
+    }
+
+    &:last-child {
+      border-right: 1px solid $silver;
+    }
+
+    &:hover {
+      background-color: $alto;
+    }
+    &.active {
+      background: linear-gradient($silverChalice 0%, $seashell 30%);
+      border-bottom: none;
+    }
+  }
+}

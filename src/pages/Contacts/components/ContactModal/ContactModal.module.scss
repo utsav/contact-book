@@ -1,0 +1,75 @@
+@import '../../../../styles/variables.scss';
+
+.root {
+  position: absolute;
+  z-index: 1;
+}
+
+.close {
+  position: absolute;
+  color: $silverChalice;
+  font-size: 28px;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+
+  :hover,
+  :focus {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient($silverChalice, $seashell 10%, $silverChalice 150%);
+  border: 1px solid $silverChalice;
+}
+
+.detailsContainer {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+
+  .thumbnail {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+  }
+}
+
+.infoContainer {
+  margin-left: 40px;
+  margin-right: 90px;
+
+  h1 {
+    color: $silverChalice;
+    margin-top: 0;
+    .firstName {
+      text-transform: lowercase;
+    }
+    .lastName {
+      text-transform: uppercase;
+    }
+  }
+
+  tr > td:first-child {
+    font-weight: bold;
+  }
+}
+
+.username {
+  background: linear-gradient(to top right, $redBerry, $chileanFire);
+  writing-mode: vertical-rl;
+  color: $white;
+  margin-top: -15px;
+  width: 30px;
+  padding: 15px 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  white-space: nowrap;
+}

@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.scss';
+
+.root {
+  border-bottom: 1px dotted $black;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  .firstName {
+    text-transform: capitalize;
+  }
+
+  .lastName {
+    text-transform: uppercase;
+  }
+}

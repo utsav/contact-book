@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.root {
+  padding: 2%;
+}
+
+.tabContent {
+  display: grid;
+  padding: 25px;
+  border: 1px solid $silver;
+  border-top: none;
+  grid-template-columns: auto auto;
+  grid-column-gap: 80px;
+  grid-row-gap: 20px;
+  background-color: $seashell;
+}
